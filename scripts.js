@@ -1,6 +1,6 @@
 window.onload = function() {
     const gallery = document.getElementById('gallery');
-    const images = gallery.getElementsByTagName('img');
+    const images = gallery.getElementsByClassName('image-wrapper');
     let currentIndex = 0;
     const delay = 2500; // 滚动的时间间隔
 
