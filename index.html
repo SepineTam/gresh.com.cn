@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>宣传页面</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="text.css">
 </head>
 <body>
-    here is a test page
+    <header>
+        <h1>我的宣传页</h1>
+    </header>
+    <section id="gallery-container">
+        <div id="gallery">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </section>
+    <section>
+        <h2>宣传信息</h2>
+        <p>这里是一些关于产品或服务的宣传信息...</p>
+    </section>
+    <section>
+        <h2>观看视频</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                您的浏览器不支持视频标签。
+            </video>
+        </div>
+    </section>
+    <footer>
+        <p>版权所有 © 你的公司名 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

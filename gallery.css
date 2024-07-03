@@ -1,0 +1,34 @@
+#gallery-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* 确保超出部分隐藏 */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+#gallery img {
+    width: 100vw; /* 每张图片占据整个视窗宽度 */
+    height: auto; /* 自动调整高度以保持长宽比 */
+    flex: 0 0 100%; /* 确保每张图片占据整个容器宽度 */
+    transition: transform 0.5s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* 鼠标悬浮时放大图片 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #gallery img {
+        width: 100vw;
+        height: auto; /* 在小屏幕上调整高度 */
+    }
+}
