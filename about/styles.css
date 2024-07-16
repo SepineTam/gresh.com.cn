@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(146, 188, 131, 0.47);
+    /*background-color: white;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 300px; /* 根据需要调整图片大小 */
+    margin-right: 20px;
+}
+
+.text {
+    color: #4b0082; /* 深紫色 */
+    font-size: 2em;
+}
+
+.text p {
+    margin: 5px 0;
+}
+
+.highlight {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black; /* 字体颜色为黑色 */
+}

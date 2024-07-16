@@ -1,0 +1,58 @@
+:root {
+    --background-color: rgb(195, 198, 202);
+    --color-link: black;
+    --con-font-color: white;
+}
+
+@font-face {
+    font-family: 'STXINGKAI';
+    src: url('../fonts/STXINGKAI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SimHei';
+    src: url('../fonts/SimHei.ttf') format('truetype');
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-title {
+    font-size: 50px;
+    font-family: 'SimHei', sans-serif;
+}
+
+.nav-links {
+    display: flex; /* 让所有子元素(li)在一行排列 */
+    list-style: none; /* 移除默认的列表样式 */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-right: 30px; /* 左边距以间隔各个项 */
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+    color: black; /* 链接的字体颜色 */
+    text-decoration: none; /* 移除下划线 */
+    padding: 7px 0;
+    font-size: 18px; /* 链接的字体大小 */
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    background-color: var(--background-color); /* 鼠标悬停时的背景颜色 */
+    font-size: 19px; /* 鼠标悬停时字体增大1px */
+    color: var(--con-font-color); /* 保持悬停时的字体颜色为黑色 */
+    text-decoration: none; /* 保持悬停时无下划线 */
+}

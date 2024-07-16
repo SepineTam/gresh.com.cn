@@ -1,0 +1,61 @@
+#gallery-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* 确保超出部分隐藏 */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.image-wrapper {
+    flex: 0 0 100%;
+}
+
+#gallery img {
+    width: 100vw; /* 每张图片占据整个视窗宽度 */
+    height: 100vh; /* 图片高度为视窗高度 */
+    object-fit: cover; /* 确保图片覆盖整个容器并保持长宽比 */
+    transition: transform 0.5s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* 鼠标悬浮时放大图片 */
+}
+
+header {
+    position: absolute;
+    top: 20px; /* 距离顶部20px */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* 文本颜色为白色 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10; /* 确保标题在最前面 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #gallery img {
+        width: 100vw;
+        height: auto; /* 在小屏幕上调整高度 */
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}

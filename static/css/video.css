@@ -1,0 +1,11 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 85%; /* 视频宽度为浏览器宽度的85% */
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    height: auto; /* 自动调整高度以保持长宽比 */
+}
