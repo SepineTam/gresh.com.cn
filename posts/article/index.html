@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>征稿启事👏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qr-code img {
+            width: 500px;
+            height: auto;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(15, 186, 93);
+            padding: 2px 4px; /* 增加一些填充以便更明显看到背景变化 */
+            transition: background-color 0.3s ease; /* 平滑过渡效果 */
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+        @media (max-width: 600px) {
+            .qr-code img {
+                width: 80%;
+            }
+            h1::after {
+                /*content: '\A寻找绿色环保佳作！';*/
+                white-space: pre;
+            }
+            h1 {
+                font-size: 1.5em; /* 可选，调整标题大小以适应移动设备 */
+            }
+            .contact-info {
+                font-size: 1.2em;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 id="title">🌿 征稿启事：寻找绿色环保佳作！</h1>
+    <p>🍃 我们诚挚地邀请您参与绿色环保类稿件征集，题材不限，字数不限！</p>
+
+    <p>🌍 <strong>投稿要求：</strong></p>
+    <p>📗 内容围绕环保、绿色生活、可持续发展等主题展开。</p>
+    <p>✍️ 不论是散文、论文、故事还是诗歌，都欢迎您的创作！</p>
+    <p>🐰 我们鼓励图文并茂的投稿!</p>
+
+    <p>🎁 <strong>稿费奖励：</strong></p>
+    <p>📜 被采用的稿件将会有相应稿费奖励！</p>
+
+    <p>📧 <strong>投稿方式：</strong></p>
+    <p class="contact-info">
+        请将您的稿件发送至邮箱：<br><a href="mailto:article@gresh.com.cn">article@gresh.com.cn</a><br>
+        更多详情请访问我们的网站：<br><a href="https://gresh.com.cn/posts/artical" target="_blank">点击这里🙋</a>
+    </p>
+    <div class="qr-code">
+        <p>关注我们的公众号获取更多信息：</p>
+        <img src="../../static/images/wewechat.jpg" alt="微信公众号二维码">
+    </div>
+</div>
+<script>
+    function adjustTitle() {
+        var title = document.getElementById("title");
+        if (window.innerWidth <= 600) {
+            title.innerHTML = "🌿 征稿启事：<br>寻找绿色环保佳作！";
+        } else {
+            title.innerHTML = "🌿 征稿启事：寻找绿色环保佳作！";
+        }
+    }
+
+    // 调用函数以在页面加载时和窗口调整大小时应用更改
+    window.onload = adjustTitle;
+    window.onresize = adjustTitle;
+</script>
+</body>
+</html>
