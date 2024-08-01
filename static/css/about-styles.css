@@ -22,7 +22,7 @@ body {
     width: 80%;
     margin: 0 auto; /* 使 container 居中 */
     padding: 30px;
-    background: linear-gradient(to right, #f5f5e2, #ffffff); /* 渐变背景颜色 */
+    background: linear-gradient(to right, #f5f5e2, #f0f0e2); /* 渐变背景颜色 */
     border-radius: 10px; /* 可选：为 container 添加圆角 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为 container 添加阴影 */
 }
