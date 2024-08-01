@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: rgba(146, 188, 131, 0.47);
+    /*background-color: rgb(208, 248, 203);*/
+    background-color: rgb(206, 233, 182);
     /*background-color: white;*/
     display: flex;
     justify-content: center;
@@ -17,16 +18,41 @@ body {
 .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto; /* 使 container 居中 */
+    padding: 30px;
+    background: linear-gradient(to right, #f5f5e2, #ffffff); /* 渐变背景颜色 */
+    border-radius: 10px; /* 可选：为 container 添加圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为 container 添加阴影 */
 }
 
+/*.logo {*/
+/*    width: 600px; !* 根据需要调整图片大小 *!*/
+/*    margin-right: 20px;*/
+/*}*/
 .logo {
-    width: 300px; /* 根据需要调整图片大小 */
-    margin-right: 20px;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.logo img {
+    max-width: 100%; /* 确保 logo 图片不会超出父容器的宽度 */
+    height: auto; /* 维持图片的宽高比 */
 }
 
 .text {
-    color: #4b0082; /* 深紫色 */
-    font-size: 2em;
+    flex: 2;
+    padding-left: 30px; /* 添加一些内边距，使文字不贴在 logo 上 */
+    padding-right: 20px; /* 添加一些内边距，使文字不贴在 logo 上 */
+    border-left: 2px solid #ddd; /* 添加左边框来增强边界感 */
+}
+
+.text .gresh{
+    color: #235312;
+    font-size: 48px;
+    padding-bottom: 15px;
+    font-family: "Times New Roman", serif;
 }
 
 .text p {
