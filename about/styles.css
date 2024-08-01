@@ -48,7 +48,13 @@ body {
     border-left: 2px solid #ddd; /* 添加左边框来增强边界感 */
 }
 
-.text .gresh{
+.gresh {
+    color: #235312;
+    font-size: 48px;
+    padding-bottom: 15px;
+    font-family: "Times New Roman", serif;
+}
+.gresh a {
     color: #235312;
     font-size: 48px;
     padding-bottom: 15px;
