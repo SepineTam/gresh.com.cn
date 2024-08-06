@@ -1,0 +1,119 @@
+/* image-posts.css */
+
+/* 基本图片样式 */
+.article-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 80%宽度的居中图片 */
+.image-large {
+    width: 80%;
+}
+
+/* 60%宽度的图片 */
+.image-medium {
+    width: 60%;
+}
+
+/* 两图并排布局 */
+.image-row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-row-2 .article-image {
+    width: 44%; /* 考虑到6%的间距 */
+}
+
+/* 三图并排布局 */
+.image-row-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-row-3 .article-image {
+    width: 30%; /* 大约占据剩余空间的三分之一 */
+}
+
+/* 三联图片布局:左侧两张上下排列,右侧一张 */
+.image-row-3-special {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px 0;
+}
+
+.image-row-3-special .left-column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-row-3-special .right-column {
+    width: 48%;
+}
+
+.image-row-3-special .article-image {
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0; /* 为左列的两张图片之间添加一些间距 */
+}
+
+.image-row-3-special .right-column .article-image {
+    height: 100%; /* 使右侧图片填满整个列高度 */
+    object-fit: cover; /* 保持图片比例并填满容器 */
+}
+
+/* 四图布局：2x2网格，适应横竖图片 */
+.image-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 20px 0;
+}
+
+.image-grid-4 .article-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-4 .image-landscape {
+    grid-column: span 2;
+}
+
+.image-grid-4 .image-portrait {
+    grid-row: span 2;
+}
+
+/* 四图特殊布局：左侧两个横图上下排列，右侧两个竖图左右排列 */
+.image-grid-4-special {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.image-grid-4-special .article-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-4-special .image-landscape {
+    grid-column: 1;
+}
+
+.image-grid-4-special .image-portrait {
+    grid-column: span 1;
+    grid-row: span 2;
+}

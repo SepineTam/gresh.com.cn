@@ -20,3 +20,8 @@ header {
 .main-content {
     margin-top: 30px;
 }
+
+.main-content a {
+    color: inherit;
+    text-decoration: inherit;
+}

@@ -1,0 +1,52 @@
+/* 无序列表 */
+ul.custom-list {
+    list-style-type: disc; /* 实心圆点 */
+    /*list-style-type: '✅ '; !* 实心圆点 *!*/
+    padding-left: 20px;
+}
+
+/* 有序列表 */
+ol.custom-list {
+    list-style-type: decimal; /* 数字 */
+    padding-left: 20px;
+}
+
+ul.icon-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.icon-list li {
+    padding-left: 25px;
+    position: relative;
+}
+
+ul.icon-list li::before {
+    content: '✓'; /* 可以换成其他Unicode字符或使用图片 */
+    position: absolute;
+    left: 0;
+    color: green;
+}
+
+ol.styled-list {
+    list-style-type: none;
+    counter-reset: item;
+    padding-left: 0;
+}
+
+ol.styled-list li {
+    padding-left: 40px;
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+
+ol.styled-list li::before {
+    content: counter(item);
+    background-color: green;
+    border-radius: 50%;
+    color: #e3e2e2;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-right: 30px;
+}

@@ -29,6 +29,11 @@
     margin-bottom: 30px;
 }
 
+.article-summary a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 img {
     max-width: 100%;
     height: auto;

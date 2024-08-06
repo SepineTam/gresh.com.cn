@@ -22,6 +22,10 @@
     flex-direction: column;
 }
 
+.post-card a {
+    color: inherit;
+    text-decoration: inherit;
+}
 .post-title {
     font-size: 1.3em;
     margin-bottom: 10px;
@@ -37,6 +41,11 @@
     margin-bottom: 15px;
     line-height: 1.6;
     flex-grow: 1;
+}
+
+.post-summary a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .post-keywords {

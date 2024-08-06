@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'STXINGKAI';
-    src: url('../fonts/STXINGKAI.ttf') format('truetype');
+    src: url('../../fonts/STXINGKAI.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'SimHei';
-    src: url('../fonts/SimHei.ttf') format('truetype');
+    src: url('../../fonts/SimHei.ttf') format('truetype');
 }
 
 .header {
@@ -39,6 +39,10 @@
     margin-right: 30px; /* 左边距以间隔各个项 */
 }
 
+.description a {
+    color: inherit;
+    text-decoration: inherit;
+}
 .nav-link,
 .nav-link:link,
 .nav-link:visited {

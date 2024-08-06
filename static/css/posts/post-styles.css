@@ -1,0 +1,40 @@
+.bold {
+    font-weight: bold;
+}
+
+.gGreen {
+    /*color: rgb(124, 145, 72);*/
+    color: #76923c
+}
+
+.red {
+    color: red;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.container h2 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+
+.middle {
+    text-align: center;
+}
+
+.no-bottom-padding {
+    padding-bottom: 0 !important;
+}
+
+.container div .article-text {
+    width: 90%;
+    margin: 0 auto;
+}
