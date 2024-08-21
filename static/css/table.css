@@ -1,0 +1,54 @@
+/* 表格标题样式 */
+.table-title {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* 与表格之间的间距 */
+}
+
+/* 表格整体样式 */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* 顶部、底部和表头下方的三条线 */
+.table th, .table td {
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.table thead th {
+    border-bottom: 2px solid black;
+}
+
+.table th {
+    border-top: 2px solid black;
+}
+
+.table tfoot td {
+    border-top: 2px solid black;
+}
+
+/* 表格内容字体和颜色 */
+.table th, .table td {
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+}
+
+/* 可选：调整表格的宽度 */
+.table {
+    table-layout: fixed;
+}
+
+/* 可选：调整表格中的链接样式 */
+.table a {
+    text-decoration: none;
+    color: #0000EE; /* 可根据需要更改链接颜色 */
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
